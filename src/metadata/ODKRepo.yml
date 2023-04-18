@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ODKRepo
+
+idspace: ODKREPO
+base_url: /obo/ODKRepo
+
+products:
+- ODKRepo.owl: https://raw.githubusercontent.com/pfabry/ODKRepo/main/ODKRepo.owl
+- ODKRepo.obo: https://raw.githubusercontent.com/pfabry/ODKRepo/main/ODKRepo.obo
+
+term_browser: ontobee
+example_terms:
+- ODKREPO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/pfabry/ODKRepo/v
+
+- prefix: /tracker/
+  replacement: https://github.com/pfabry/ODKRepo/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ODKREPO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/pfabry/ODKRepo/main/
+

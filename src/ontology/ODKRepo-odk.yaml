@@ -1,0 +1,20 @@
+id: ODKRepo
+title: ODK test repository
+github_org: pfabry
+repo: ODKRepo
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - base
+  - full
+primary_release: full
+export_formats:
+  - owl
+  - json
+import_group:
+  products:
+    - id: bfo
+    - id: omo
+    - id: obi
+    - id: omrse
+robot_java_args: "-Xmx8G"
