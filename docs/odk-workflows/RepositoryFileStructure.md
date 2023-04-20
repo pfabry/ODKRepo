@@ -16,10 +16,9 @@ These are the current imports in ODKREPO
 
 | Import | URL | Type |
 | ------ | --- | ---- |
-| bfo | http://purl.obolibrary.org/obo/bfo.owl | None |
-| omo | http://purl.obolibrary.org/obo/omo.owl | None |
+| bfo-2020 | https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020.owl | mirror |
+| omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |
-| omrse | http://purl.obolibrary.org/obo/omrse.owl | None |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:

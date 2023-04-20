@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/ODKRepo/ODKRepo-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/ODKRepo/ODKRepo-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ODKRepo/ODKRepo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ODKRepo/releases/2023-04-18/ODKRepo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ODKRepo/releases/2023-04-20/ODKRepo-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>ODK test repository</terms:title>
-        <owl:versionInfo>2023-04-18</owl:versionInfo>
+        <owl:versionInfo>2023-04-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,6 +28,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
@@ -71,10 +78,18 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ODKREPO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ODKREPO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/ODKREPO_0000001 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/ODKREPO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is an intervention.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health intervention</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
